@@ -4,6 +4,9 @@
 [![Build Status](https://travis-ci.org/jeroendesloovere/vcard.svg?branch=master)](https://travis-ci.org/jeroendesloovere/vcard)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/jeroendesloovere/vcard/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/jeroendesloovere/vcard/?branch=master)
 
+**NOTE** forked from [MammutaAlex/vcard](https://github.com/MammutAlex/vcard) which fixes the addMedia function for following issue
+`Required parameter $element follows optional parameter $include`
+
 This VCard PHP library can generate a vCard with some data. When using an iOS device < iOS 8 it will export as a .ics file because iOS devices don't support the default .vcf files.
 
 **NOTE**: We are working on a complete new version to work with vCard version 4.0, with extreme good code quality. [Check out the new version](https://github.com/jeroendesloovere/vcard/tree/2.0.0-dev)
@@ -13,7 +16,7 @@ This VCard PHP library can generate a vCard with some data. When using an iOS de
 ### Installation
 
 ```bash
-composer require jeroendesloovere/vcard
+composer require jeroendesloovere/vcard:patch
 ```
 > This will install the latest version of vcard with [Composer](https://getcomposer.org)
 
